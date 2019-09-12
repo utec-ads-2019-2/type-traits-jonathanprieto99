@@ -1,0 +1,2 @@
+/Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug/CMakeFiles/edit_cache.dir
