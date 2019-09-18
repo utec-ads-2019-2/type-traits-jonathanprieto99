@@ -44,9 +44,33 @@ class SelfList {
 
         bool find(T data) {
             switch (this->method) {
-                case Transpose: {
 
+                case Transpose: {
+                    auto *temporal=head;
+
+                    if(head->data==data) {
+                        return true;
+                    }
+
+                    if(temporal==nullptr){
+                        return false;
+                    }
+
+                    if (nodes > 1) {
+                        while (temporal->next!=nullptr) {
+                            if (temporal->next->data == data) {
+                                break;
+                            }
+                            temporal=temporal->next;
+                        }
+                        if(temporal->next==nullptr){
+                            return false;
+                        }
+                        swap(temporal->next->data,temporal->data);
+                        return true;
+                    }
                 }
+
                 case Move: {
                     auto *temporal = head;
 
