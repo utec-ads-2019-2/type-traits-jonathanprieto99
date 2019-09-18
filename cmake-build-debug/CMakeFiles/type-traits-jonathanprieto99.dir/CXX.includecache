@@ -23,6 +23,8 @@ type_traits
 /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/self_list.h
 node.h
 /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/node.h
+iostream
+-
 
 /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/test/tester.cpp
 tester.h
@@ -45,4 +47,6 @@ assert.h
 /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/traits_list.h
 node.h
 /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/node.h
+iostream
+-
 
