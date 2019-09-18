@@ -63,11 +63,11 @@ class SelfList {
                             if (temporal->next->data==data) {
                                 break;
                             }
-                            temporal = temporal->next;
+                            temporal=temporal->next;
                         }
-                        auto *nuevo = temporal->next;
-                        nuevo->next =head;
-                        head =nuevo;
+                        auto *nuevo=temporal->next;
+                        nuevo->next=head;
+                        head=nuevo;
                         return true;
                     }
                 }
