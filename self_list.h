@@ -35,16 +35,49 @@ class SelfList {
             if (find(data)!=find(temporal)){
                 return false;
             }
-            auto *newNode = *temporal;
+            auto *nuevo = *temporal;
             *temporal = (*temporal)->next;
             --this->nodes;
-            delete newNode;
+            delete nuevo;
             return true;
         }  
 
         bool find(T data) {
-            // TODO
-        }
+            switch (this->method) {
+                case Transpose: {
+
+                }
+                case Move: {
+                    auto *temporal = head;
+
+                    if(head->data==data) {
+                        return true;
+                    }
+
+                    if(temporal==nullptr){
+                        return false;
+                    }
+
+                    if (nodes > 1) {
+                        while (temporal->next!=nullptr) {
+                            if (temporal->next->data==data) {
+                                break;
+                            }
+                            temporal = temporal->next;
+                        }
+                        auto *nuevo = temporal->next;
+                        temporal->next = temporal->next->next;
+                        nuevo->next =head;
+                        head =nuevo;
+                        return true;
+                    }
+                }
+
+                case Count: {
+
+                }
+                }
+            }
 
         T operator [] (int index) {
             Node<T> *temporal = head;
