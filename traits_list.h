@@ -16,15 +16,16 @@ class TraitsList {
 
         bool find(T data, Node<T> **&pointer) {
             pointer=&head;
-            while(pointer!=nullptr){
-                if(*pointer==data){
-                    return true;
+            while(*pointer!=nullptr){
+                if(!cmp(data, (*pointer)->data)){
+                    //El & te permite posicionarte en la direccion que sacaste del *pointer->next
+                    pointer=&((*pointer)->next);
                 }
                 else{
-                    //El & te permite posicionarte en la direccion que sacaste del *pointer->next
-                    pointer=&(*pointer->next);
+                    break;
                 }
             }
+            return *pointer != nullptr && (*pointer)->data == data;
         }
               
     public:
@@ -69,7 +70,7 @@ class TraitsList {
 
              
         int size() {
-            // TODO
+            return this->nodes;
         }
 
         void print() {
@@ -77,7 +78,7 @@ class TraitsList {
         }
 
         ~TraitsList() {
-            // TODO
+            head->killSelf();
         }         
 };
 

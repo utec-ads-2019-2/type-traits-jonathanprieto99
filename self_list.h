@@ -60,7 +60,7 @@ class SelfList {
         }
 
         ~SelfList() {
-            // TODO
+            head->killSelf();
         }  
 };
 
