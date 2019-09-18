@@ -57,10 +57,10 @@ class TraitsList {
             return true;
         }  
 
-        //bool find(T data) {
-        //    Node<T> **temporal;
-        //    return find(data,temporal);
-        //}
+        bool find(T data) {
+           Node<T> **temporal;
+            return find(data,temporal);
+        }
 
     T operator[](int index) {
         Node<T> *temporal = head;
