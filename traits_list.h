@@ -2,6 +2,8 @@
 #define TRAITS_LIST_H
 
 #include "node.h"
+#include <iostream>
+using namespace std;
 
 template <typename Tr>
 class TraitsList {     
@@ -74,8 +76,12 @@ class TraitsList {
         }
 
         void print() {
-            // TODO
-        }
+                auto *temporal = head;
+                while (temporal!= nullptr) {
+                    cout << temporal->data << " ";
+                    temporal = temporal->next;
+                }
+            }
 
         ~TraitsList() {
             head->killSelf();

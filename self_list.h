@@ -2,6 +2,8 @@
 #define SELF_LIST_H
 
 #include "node.h"
+#include <iostream>
+using namespace std;
 
 template <typename T>
 class SelfList {
@@ -57,7 +59,13 @@ class SelfList {
         }
 
         void print() {
-            // TODO
+            if(head!= nullptr) {
+                auto *temporal = head;
+                while (temporal != nullptr) {
+                    cout << temporal->data << " ";
+                    temporal = temporal->next;
+                }
+            }
         }
 
         ~SelfList() {
