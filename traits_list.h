@@ -8,33 +8,65 @@ class TraitsList {
     public:
         typedef typename Tr::T T;
         typedef typename Tr::Operation Operation;
+        int nodes;
       
     private:
         Node<T>* head;
         Operation cmp;
 
         bool find(T data, Node<T> **&pointer) {
-            // TODO
+            pointer=&head;
+            while(pointer!=nullptr){
+                if(*pointer==data){
+                    return true;
+                }
+                else{
+                    //El & te permite posicionarte en la direccion que sacaste del *pointer->next
+                    pointer=&(*pointer->next);
+                }
+            }
         }
               
     public:
-        TraitsList() : head(nullptr) {};
+        TraitsList() : head(nullptr), nodes(0) {};
              
         bool insert(T data) {
-            // TODO
+            auto *nuevo = new Node<T>(data);
+            Node<T> **temporal;
+            if (find(data, temporal)){
+                return false;
+            }
+            nuevo->next = *temporal;
+            *temporal = nuevo;
+            ++nodes;
+            return true;
         }
              
         bool remove(T data) {
-            // TODO
+            Node<T> **temporal;
+            if (!find(data, temporal)){
+                return false;
+            }
+            auto *nuevo = *temporal;
+            *temporal = (*temporal)->next;
+            --nodes;
+            delete nuevo;
+            return true;
         }  
 
         bool find(T data) {
-            // TODO
+            Node<T> **temporal;
+            return find(data,temporal);
         }
 
-        T operator [] (int index) {
-            // TODO
+    T operator[](int index) {
+        Node<T> *temporal = head;
+        for (int i = 0; i != index; i++){
+            temporal = temporal->next;
         }
+        return temporal->data ;
+        }
+
              
         int size() {
             // TODO

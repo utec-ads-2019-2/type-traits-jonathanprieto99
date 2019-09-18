@@ -65,6 +65,43 @@ CMAKE_SOURCE_DIR = /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanpr
 CMAKE_BINARY_DIR = /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/type-traits-jonathanprieto99.dir
+
+# All Build rule for target.
+CMakeFiles/type-traits-jonathanprieto99.dir/all:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/depend
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target type-traits-jonathanprieto99"
+.PHONY : CMakeFiles/type-traits-jonathanprieto99.dir/all
+
+# Include target in all.
+all: CMakeFiles/type-traits-jonathanprieto99.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/type-traits-jonathanprieto99.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/type-traits-jonathanprieto99.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/type-traits-jonathanprieto99.dir/rule
+
+# Convenience name for target.
+type-traits-jonathanprieto99: CMakeFiles/type-traits-jonathanprieto99.dir/rule
+
+.PHONY : type-traits-jonathanprieto99
+
+# clean rule for target.
+CMakeFiles/type-traits-jonathanprieto99.dir/clean:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/clean
+.PHONY : CMakeFiles/type-traits-jonathanprieto99.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/type-traits-jonathanprieto99.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

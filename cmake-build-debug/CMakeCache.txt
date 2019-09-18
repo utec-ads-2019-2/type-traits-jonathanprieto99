@@ -142,7 +142,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=type-traits-jonathanprieto99
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -211,6 +211,12 @@ Project_BINARY_DIR:STATIC=/Users/jonathanprieto/Documents/GitHub/type-traits-jon
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99
+
+//Value Computed by CMake
+type-traits-jonathanprieto99_BINARY_DIR:STATIC=/Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99/cmake-build-debug
+
+//Value Computed by CMake
+type-traits-jonathanprieto99_SOURCE_DIR:STATIC=/Users/jonathanprieto/Documents/GitHub/type-traits-jonathanprieto99
 
 
 ########################

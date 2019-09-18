@@ -110,6 +110,100 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named type-traits-jonathanprieto99
+
+# Build rule for target.
+type-traits-jonathanprieto99: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 type-traits-jonathanprieto99
+.PHONY : type-traits-jonathanprieto99
+
+# fast build rule for target.
+type-traits-jonathanprieto99/fast:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/build
+.PHONY : type-traits-jonathanprieto99/fast
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mock/mocker.o: mock/mocker.cpp.o
+
+.PHONY : mock/mocker.o
+
+# target to build an object file
+mock/mocker.cpp.o:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/mock/mocker.cpp.o
+.PHONY : mock/mocker.cpp.o
+
+mock/mocker.i: mock/mocker.cpp.i
+
+.PHONY : mock/mocker.i
+
+# target to preprocess a source file
+mock/mocker.cpp.i:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/mock/mocker.cpp.i
+.PHONY : mock/mocker.cpp.i
+
+mock/mocker.s: mock/mocker.cpp.s
+
+.PHONY : mock/mocker.s
+
+# target to generate assembly for a file
+mock/mocker.cpp.s:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/mock/mocker.cpp.s
+.PHONY : mock/mocker.cpp.s
+
+test/tester.o: test/tester.cpp.o
+
+.PHONY : test/tester.o
+
+# target to build an object file
+test/tester.cpp.o:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/test/tester.cpp.o
+.PHONY : test/tester.cpp.o
+
+test/tester.i: test/tester.cpp.i
+
+.PHONY : test/tester.i
+
+# target to preprocess a source file
+test/tester.cpp.i:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/test/tester.cpp.i
+.PHONY : test/tester.cpp.i
+
+test/tester.s: test/tester.cpp.s
+
+.PHONY : test/tester.s
+
+# target to generate assembly for a file
+test/tester.cpp.s:
+	$(MAKE) -f CMakeFiles/type-traits-jonathanprieto99.dir/build.make CMakeFiles/type-traits-jonathanprieto99.dir/test/tester.cpp.s
+.PHONY : test/tester.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +212,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... type-traits-jonathanprieto99"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mock/mocker.o"
+	@echo "... mock/mocker.i"
+	@echo "... mock/mocker.s"
+	@echo "... test/tester.o"
+	@echo "... test/tester.i"
+	@echo "... test/tester.s"
 .PHONY : help
 
 
