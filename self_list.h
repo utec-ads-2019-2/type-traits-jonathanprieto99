@@ -13,6 +13,7 @@ class SelfList {
     protected:
         Node<T>* head;
         Method method;
+        int nodes;
 
     public:
         SelfList(Method method) : head(nullptr) {};
