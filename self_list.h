@@ -66,7 +66,6 @@ class SelfList {
                             temporal = temporal->next;
                         }
                         auto *nuevo = temporal->next;
-                        temporal->next = temporal->next->next;
                         nuevo->next =head;
                         head =nuevo;
                         return true;
