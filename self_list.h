@@ -32,6 +32,8 @@ class SelfList {
              
         bool remove(T data) {
             Node<T> **temporal;
+            // Cómo funciona esto?
+            // No va a ejecutar
             if (find(data)!=find(temporal)){
                 return false;
             }
